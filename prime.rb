@@ -1,16 +1,8 @@
-def prime?(num)
-  arr=[]
-  i=2
-  while i<num
-  arr.push(i)
-  i+=1
+ def is_prime (num)
+  for d in 2..(num - 1)
+   if (num % d) == 0
+    return false
+   end
+   end
+   return true
   end
-  y=0
-  while y<arr.length
-  if (num % arr[y]==0)
-  return false
-  end
-  y+=1
-  end
-  return true
-end
